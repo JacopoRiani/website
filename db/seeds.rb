@@ -13,3 +13,4 @@ Project.destroy_all
 #Create projects in database
 Project.create!(title: 'Venues Suburbs Gap', details: 'Analysis of the venues more likely to be chosen by the bookers in the main Australian cities using PowerBi')
 Project.create!(title: 'Master Thesis', details: 'Analysis and forecast of the demand in the Supply Chain')
+Project.create!(title: 'WebApplication', details: 'The best way to plan your trip and earn rewards')

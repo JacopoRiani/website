@@ -61,6 +61,7 @@
     </div>
   </div>
 
+   <%= link_to(about_path, class: "no-underline") do %>
   <div class="card mt-3 mb-3 mx-3" style="width: 21rem;">
     <%= image_tag('about.jpg', class: 'card-img-top', alt: 'Project Image', style: 'height: 200px; object-fit: cover;') %>
     <div class="card-body">
@@ -68,6 +69,7 @@
       <p class="card-text">Some information about me, how to reach me!</p>
     </div>
   </div>
+  <% end %>
 </div>
 
 </div>
