@@ -1,0 +1,36 @@
+ <div class="container">
+<div class="dashboard-bg" style="background-image: url(<%= asset_path 'projback.jpeg' %>); background-size: 100% auto; height: 350px; position: relative; margin-top: -17px;">
+    <div class="dashboard-overlay"></div>
+    <div class="container" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+      <div class="row">
+        <div class="col-md-6 offset-md-3 text-center text-white">
+          <div class="my-4">
+            <br>
+            <br>
+            <h1><span class="accent-title text-white mt-5">PROJECTS</span></h1>
+            <p class="fs-6 lead">Welcome to my website! Here you can find some of the projects I have worked on and more. If you have any questions, feel free to get in touch.</p>
+          </div>
+          <p>You can find me on LinkedIn at the following:</p>
+        </div>
+      </div>
+    </div>
+</div>
+
+
+
+<div class="container-pro">
+  <div class="row">
+    <% @projects.each do |project| %>
+      <div class="col-md-4">
+        <div class="card mt-3 mb-3 mx-3" style="width: 21rem;">
+          <%= image_tag("powerbi.jpg", class: 'card-img-top', alt: 'Project Image', style: 'height: 200px; object-fit: cover;') %>
+          <div class="card-body">
+            <h5 class="card-title"><%= project.title %></h5>
+            <p class="card-text"><%= project.details %></p>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
+</div>
