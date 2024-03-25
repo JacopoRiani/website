@@ -7,10 +7,9 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
+puts "Deleting projects..."
+Project.destroy_all
 
 #Create projects in database
-Project.create!(title: "thanh", details: "Details for Thanh's project")
-Project.create!(title: "dimitri", details: "Details for Dimitri's project")
-Project.create!(title: "germain", details: "Details for Germain's project")
-Project.create!(title: "damien", details: "Details for Damien's project")
-Project.create!(title: "julien", details: "Details for Julien's project")
+Project.create!(title: 'Venues Suburbs Gap', details: 'Analysis of the venues more likely to be chosen by the bookers in the main Australian cities using PowerBi')
+Project.create!(title: 'Master Thesis', details: 'Analysis and forecast of the demand in the Supply Chain')
