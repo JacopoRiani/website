@@ -52,7 +52,7 @@
       <p class="card-text">Catalogue of free/paid products i helped developing</p>
     </div>
   </div>
-
+   <%= link_to(services_path, class: "no-underline") do %>
   <div class="card mt-3 mb-3 mx-3" style="width: 21rem;">
     <%= image_tag('services.jpg', class: 'card-img-top', alt: 'Project Image', style: 'height: 200px; object-fit: cover;') %>
     <div class="card-body">
@@ -60,6 +60,7 @@
       <p class="card-text">Details about the various professional services i can provide</p>
     </div>
   </div>
+  <% end %>
 
    <%= link_to(about_path, class: "no-underline") do %>
   <div class="card mt-3 mb-3 mx-3" style="width: 21rem;">
