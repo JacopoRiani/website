@@ -7,7 +7,7 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
-puts "Deleting projects..."
-Project.destroy_all
+# puts "Deleting projects..."
+# Project.destroy_all
 
 #Create projects in database
