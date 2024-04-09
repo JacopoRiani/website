@@ -1,0 +1,8 @@
+.overlay {
+  transition: background-color 0.3s;
+  background-color: transparent;
+}
+
+.overlay:hover {
+  background-color: blue;
+}
