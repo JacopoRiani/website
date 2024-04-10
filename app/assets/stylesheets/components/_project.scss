@@ -21,3 +21,13 @@
   width: 0;
   background-color: #fac412; /* Color of the progress bar */
 }
+
+.project-details-container {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
+
+.project-details {
+  text-align: center; /* Center the text inside */
+}

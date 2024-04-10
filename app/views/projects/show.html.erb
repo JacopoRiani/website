@@ -1,7 +1,13 @@
+<div id="progress-bar-container">
+    <div id="progress-bar"></div>
+</div>
+<div class="project-details-container">
+  <div class="project-details">
+    <h2><%= @project.title %></h2>
+    <p><%= @project.details %></p>
+  </div>
+</div>
 
-<div class="project-details">
-  <h2><%= @project.title %></h2>
-  <p><%= @project.details %></p>
 
   <!-- Render specific partial based on project's ID -->
   <% if @project.title == "Master Thesis" %>
@@ -10,6 +16,6 @@
     <%= render partial: "projects/pokemarket", locals: { project: @project } %>
   <% elsif @project.title == "Venues Suburbs Gap" %>
     <%= render partial: "projects/venue", locals: { project: @project } %>
+    <% elsif @project.title == "TripQuest" %>
+    <%= render partial: "projects/tripquest", locals: { project: @project } %>
   <% end %>
-
-</div>

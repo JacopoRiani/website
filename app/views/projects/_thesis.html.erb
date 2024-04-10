@@ -1,5 +1,6 @@
+<div class="container">
+<%= cl_image_tag "arima.png", height: 300, width: 300, crop: :fill %>
 
-<p>Debug: This is the Master Thesis partial.</p>
 <p>
 This master thesis stemmed from the desire to put together some topics which meant a lot to me back in those days: Data analysis and Supply chain. In order to merge them together I thought it would be a good idea to bring the financial and econometric model into the supply chain, specifically in the demand planning side. By having multiple approaches in developing a demand market strategy we could offer a better product and service to the customers. Despite some doubts I proceed with this idea. I’ve collected the demand, so the time series of specific electric motors in order to apply some of the most important econometric models. I’ve selected them by looking at specific elements: trends, seasonality, and level. Specifically, six motors sparked my interest as for three years they have shown the same seasonality. The econometric models applied for the thesis have been the ARMA, ARIMA models, in this case by bearing in mind the seasonality the SARIMA model has been applied.
 
@@ -7,10 +8,13 @@ This master thesis stemmed from the desire to put together some topics which mea
 
 <p>
 A time series is a series of ordered data points which are subject to serial dependence (e.g. datapoints generated at different times can be dependent on each other). Most time series can be decomposed into 4 main components:
-•	Level: represents how the time series would look like if it was a simple straight line.
-•	Noise: resulting from measurement errors embedded in the recorded data.
-•	Trend: determines the overall behavior of the time series (e.g. linearly increasing/decreasing).
-•	Seasonality: represents any cyclical behavior which might compose our data (e.g. for a particular stock, prices might always be higher during the summer compared to the rest of the year).
+<ul>
+  <li>Level: represents how the time series would look like if it was a simple straight line.</li>
+  <li>Noise: resulting from measurement errors embedded in the recorded data.</li>
+  <li>Trend: determines the overall behavior of the time series (e.g. linearly increasing/decreasing).</li>
+  <li>Seasonality: represents any cyclical behavior which might compose our data (e.g. for a particular stock, prices might always be higher during the summer compared to the rest of the year).</li>
+</ul>
+
 Additionally, time series can fall into two main categories: stationary and non-stationary. A time series can be considered stationary if its main statistical properties (e.g. mean, autocorrelation, variance) do not vary over time (otherwise, is non-stationary). Stationary time series are much easier to model compared to their non-stationary counterparts.
 Lastly, another important property to take into account when analyzing time series is autocorrelation. In fact, if a time series is autocorrelated, it can show a linear relationship with some of its lagged values (likely leading to overfitting during modelling).
 
@@ -28,14 +32,21 @@ At this point, we are ready to import the necessary libraries and datasets.
 Once cleaned the dataset, we can now divide it into training and test subsets and visualize the time series.
 ARIMA (AutoRegressive Integrated Moving Average)
 The acronym of ARIMA stands for [1]:
-•	AutoRegressive = the model takes advantage of the connection between a predefined number of lagged observations and the current one.
-•	Integrated = differencing between raw observations (e.g. subtracting observations at different time steps).
-•	Moving Average = the model takes advantage of the relationship between the residual error and the observations.
+<ul>
+  <li>AutoRegressive: the model takes advantage of the connection between a predefined number of lagged observations and the current one.</li>
+  <li>Integrated: differencing between raw observations (e.g. subtracting observations at different time steps).</li>
+  <li>Moving Average: the model takes advantage of the relationship between the residual error and the observations.</li>
+</ul>
+
 
 The ARIMA model makes use of three main parameters (p,d,q). These are:
-•	p = number of lag observations.
-•	d = the degree of differencing.
-•	q = the size of the moving average window.
+<ul>
+  <li>p = number of lag observations.</li>
+  <li>d = the degree of differencing.</li>
+  <li>q = the size of the moving average window.</li>
+</ul>
+
 ARIMA can lead to particularly good results if applied to short time predictions.
 
 </p>
+</div>
