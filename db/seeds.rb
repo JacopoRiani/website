@@ -21,7 +21,7 @@ venues_photo = File.open(Rails.root.join("app/assets/images/leadfeed.png"))
 venues_suburbs_gap.image.attach(io: venues_photo, filename: "leadfeed.png", content_type: "image/png")
 venues_suburbs_gap.save!
 
-master_thesis = Project.create!(title: "Master Thesis", details: "Analysis and forecast of the motors demand in the Supply Chain. The forecast has been done through Arima model in R software.")
+master_thesis = Project.create!(title: "Master Thesis", details: "Analysis and forecast of the motors demand in the Supply Chain. The forecast has been done through Arima model in R.")
 
 thesis_photo = File.open(Rails.root.join("app/assets/images/thesis.png"))
 master_thesis.image.attach(io: thesis_photo, filename: "thesis.png", content_type: "image/png")
