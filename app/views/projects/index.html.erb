@@ -20,7 +20,7 @@
       <% @projects.each_slice(2) do |projects_row| %>
       <div class="row">
         <% projects_row.each do |project| %>
-        <div class="col-md-6">
+        <div class="col-md-3">
           <div class="card mt-3 mb-3 mx-3" style="width: 21rem; margin-right: 2px; margin-bottom: 10px;">
             <%= link_to project_path(project), style: "text-decoration: none; color: black;" do %>
             <%= image_tag(project.image.url, class: 'card-img-top', alt: 'Project Image', style: 'height: 200px; object-fit: cover;') if project.image.attached? %>

@@ -18,6 +18,8 @@
     <%= render partial: "projects/venue", locals: { project: @project } %>
     <% elsif @project.title == "TripQuest" %>
     <%= render partial: "projects/tripquest", locals: { project: @project } %>
+    <% elsif @project.title == "Road Accidents in Italy" %>
+    <%= render partial: "projects/roadaccident", locals: { project: @project } %>
   <% end %>
   <hr>
   <br>
