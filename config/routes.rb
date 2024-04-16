@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   resources :projects, only: [ :index, :show ]
   resources :about
   resources :services
+  resources :books
   # Defines the root path route ("/")
   # root "posts#index"
 end
