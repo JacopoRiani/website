@@ -1,8 +1,54 @@
-<h1>Our first view 🚀</h1>
+<div class="dashboard-bg" style="background-image: url(<%= asset_path 'projback.jpeg' %>); background-size: 100% auto; height: 400px; position: relative;">
+    <div class="dashboard-overlay"></div>
+    <div class="container" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+      <div class="row">
+        <div class="col-md-6 offset-md-3 text-center text-white">
+          <div class="my-4">
+            <br>
+            <br>
+            <h1><span class="accent-title text-white mt-5">BOOKS</span></h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<style>
+  .search-form-control {
+    background-color: black;
+    color: white;
+    padding: 10px; /
+  }
+</style>
+
+<div class="container" style="max-width: 960px;">
+<div class="container mt-5 mb-5">
+  <div class="row justify-content-center">
+    <div class="col-md-8">
+      <%= simple_form_for :search, url: root_path, method: :get, html: { class: 'form-inline', id: 'search-form' } do |f| %>
+        <div class="search-form-control form-group">
+          <select class="form-control mr-sm-2" name="search[book]" id="book-select">
+            <option value="" selected>Select a book</option>
+            <option value="book1">IKIGAI</option>
+            <option value="book2">THE NUDGE</option>
+            <option value="book3">ENZO FERRARI</option>
+          </select>
+        </div>
+        <div class="text-center mt-3">
+          <%= f.button :submit, 'Search', class: 'btn btn-primary btn-sm', id: 'search-button' %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>
+
+
+
 <p>In this page you can find the most important and interesting books who really helped me to be passionate about the journey I am in and how to get the most out of it! Each of these books taught me somehow the attitude and commitment you might have to pursue what you really want. Probably most of you know them but I’ve tried to summarize from my standpoint!
 Worth a look!
 </p>
 <h3>IKIGAI</h3>
+
 <h4>The Japanese secret to a long and Happy Life</h4>
 <p>Each of us is driven by a purpose, you just have to discover it. Ikigai, a Japanese way of life, incorporates this concept: figure out what you are good at, what you enjoy and, finally, how you can create value from these two passions. Furthermore, don’t forget to take care of your body and focus on what really matters in your life. By doing this, your life will become easier in every aspect. Regardless of all the problems you face, remember to take action and set a threshold of activities to do so that you don't feel lonely. I think it is good to get out of your comfort bubble and discover yourself by taking some risks, otherwise you will always remain within the confines of your own circle. Have experiences, immerse yourself in other cultures, learn, ask, and don't be shy about making mistakes, despite all the problems you will face. Step out of your comfort zone and find your inner self and what you really want to do with your life, whether it is a job or a holiday. Find what makes you feel good, hang out with friends who would like to see you achieve your goals.
 But remember that the most important thing is to plan your day with commitment, when you decide in your mind to do that, do it! Be flexible, there are two different beliefs: there are people who think that concentrating on developing a single skill and immersing yourself to the maximum on it is better than learning many different skills but at a lower level.
@@ -15,3 +61,9 @@ It's up to you which one you want to step in!
 
 <h3>ENZO FERRARI</h3>
 <h4>The definitive biography of an icon</h4>
+<p>Enzo Ferrari's biography. The name speaks for himself so I can wrap up here (joking). I'll try to dive deeper in his life story! The first chapters talk about his early childhood, he had to face the loss of both his father and his brother.
+Despite these tragedies he was able to not lose the passion for cars and for the sector itself. He was sparked by the desire to build his future at all costs in the field and on top of that he was very passionate about life, throughout his life he has never lost his passion for cars. Thanks to his relentless desire to be a racing driver he overcame all the problems he had to face. He managed to open his own business, although it went bankrupt after a couple of years due to the lack of knowledge which Enzo had at that early age. He pointed out that thanks to that previous failure the way he should have carried out the business. If you are not fully involved in the business, you are very likely to fail. You must step into the business itself, especially if it’s yours. Enzo Ferrary became Ferrari thanks to his passion but also thanks to the devotion of work he used to have for the car business. of living though all the lost he had to tackle. His father used to have a small manufacturing activity and thanks to the revenues of the store he managed to establish his early-stage entrepreneurial activity. He was too busy in the racing competition that he couldn’t spend a lot of time in the new activity. At the age of 23, he met the woman who would become his future wife. In spite of the amazing moments, he spent with her this story will soon become a terrible burden with which Enzo would have to deal in the future.
+His racing career proceeded in full swing, though some initial troubles. Both his mother and his wife were not happy with his job in the racing cars as at that time a lot of people died while racing. It was very risky.  At the age of around 30 thanks to his attitude and his personality he had been in charged of alfa Romeo team, at that time the most important Italian brand when it came to speak about car.
+</p>
+</div>
+<hr>

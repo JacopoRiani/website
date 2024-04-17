@@ -4,18 +4,12 @@ class ProjectsController < ApplicationController
   end
 
   def show
-    begin
-      @project = Project.find(params[:id])
-      puts "@project: #{@project.inspect}"
-    rescue ActiveRecord::RecordNotFound
-      flash[:alert] = "The project you are looking for does not exist."
-      redirect_to projects_path # Redirect to the projects index page or any other appropriate page
-    end
+  @project = Project.find(params[:id])
   end
-end
 
 private
 
-def project_params
-  params.require(:project).permit(:title, :details, :image)
+  def project_params
+    params.require(:project).permit(:title, :details, :image)
+  end
 end
