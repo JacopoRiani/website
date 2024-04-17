@@ -17,9 +17,9 @@
 
   <div class="container-pro mt-3 ms-5">
     <div class="row justify-content-center">
-      <% @projects.each_slice(2) do |projects_row| %>
-      <div class="row">
-        <% projects_row.each do |project| %>
+      <% @projects.each do |project| %>
+      <!--<div class="row">-->
+        <%# projects_row.each do |project| %>
         <div class="col-md-3">
           <div class="card mt-3 mb-3 mx-3" style="width: 21rem; margin-right: 2px; margin-bottom: 10px;">
             <%= link_to project_path(project), style: "text-decoration: none; color: black;" do %>
