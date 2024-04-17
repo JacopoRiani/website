@@ -14,34 +14,106 @@
       </div>
     </div>
   </div>
+<div class="container mt-3">
+  <div class="row justify-content-center">
+    <div class="col-md-8"> <!-- This will create two columns in the middle of the page -->
 
-
-    <div class="card mt-3 mb-3 mx-3" style="width: 23rem; height: 380px; margin: 20px;">
-      <%= image_tag('leadfeed.png', class: 'card-img-top', alt: 'Leadfeed Image', style: 'height: 200px; object-fit: cover;') %>
-      <div class="card-body" style="padding: 30px;">
-        <h5 class="card-title" style="font-size: 24px;"><strong>Analysis of the venues more likely to be chosen by the bookers in the main Australian cities using PowerBi.</strong></h5>
-        <p class="card-text">vfvtg</p>
-      </div>
-    </div>
-
-
-  <div class="container-pro mt-3 ms-5">
-    <div class="row justify-content-center">
-      <% @projects.each do |project| %>
-      <!--<div class="row">-->
-        <%# projects_row.each do |project| %>
-        <div class="col-md-3">
-          <div class="card mt-3 mb-3 mx-3" style="width: 21rem; margin-right: 2px; margin-bottom: 10px;">
-            <%= link_to project_path(project), style: "text-decoration: none; color: black;" do %>
-            <%= image_tag(project.image.url, class: 'card-img-top', alt: 'Project Image', style: 'height: 200px; object-fit: cover;') if project.image.attached? %>
-            <div class="card-body">
-              <h5 class="card-title"><%= project.title %></h5>
-              <p class="card-text"><%= project.details %></p>
+      <div class="row">
+        <div class="col-md-6">
+        <%= link_to(projects_path, class: "no-underline text-dark") do %>
+          <div class="card mt-3 mb-3 mx-3" style="width: 23rem;">
+            <%= image_tag('leadfeed.png', class: 'card-img-top', alt: 'Leadfeed Image', style: 'height: 200px; object-fit: cover;') %>
+            <div class="card-body" style="padding: 30px;">
+              <h5 class="card-title" style="font-size: 24px;">Leadfeed</h5>
+              <p class="card-text">Analysis of the venues more likely to be chosen by the bookers in the main Australian cities using PowerBi.</p>
             </div>
-            <% end %>
+          </div>
+          <% end %>
+        </div>
+        <div class="col-md-6">
+          <div class="card mt-3 mb-3 mx-3" style="width: 23rem;">
+            <%= image_tag('thesis.png', class: 'card-img-top', alt: 'Thesis Image', style: 'height: 200px; object-fit: cover;') %>
+            <div class="card-body" style="padding: 30px;">
+              <h5 class="card-title" style="font-size: 24px;">Thesis</h5>
+              <p class="card-text">Analysis of the venues more likely to be chosen by the bookers in the main Australian cities using PowerBi.</p>
+            </div>
           </div>
         </div>
-        <% end %>
       </div>
+
+      <div class="row mt-3"> <!-- Add margin between rows -->
+        <div class="col-md-6">
+          <div class="card mt-3 mb-3 mx-3" style="width: 23rem;">
+            <%= image_tag('tripque.png', class: 'card-img-top', alt: 'TripQuest Image', style: 'height: 200px; object-fit: cover;') %>
+            <div class="card-body" style="padding: 30px;">
+              <h5 class="card-title" style="font-size: 24px;">TripQuest</h5>
+              <p class="card-text">Analysis of the venues more likely to be chosen by the bookers in the main Australian cities using PowerBi.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card mt-3 mb-3 mx-3" style="width: 23rem;">
+            <%= image_tag('pokemarket.png', class: 'card-img-top', alt: 'Pokemarket Image', style: 'height: 200px; object-fit: cover;') %>
+            <div class="card-body" style="padding: 30px;">
+              <h5 class="card-title" style="font-size: 24px;">Pokemarket</h5>
+              <p class="card-text">Analysis of the venues more likely to be chosen by the bookers in the main Australian cities using PowerBi.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mt-3"> <!-- Add margin between rows -->
+        <div class="col-md-6">
+          <div class="card mt-3 mb-3 mx-3" style="width: 23rem;">
+            <%= image_tag('caraccident.png', class: 'card-img-top', alt: 'Car accident Image', style: 'height: 200px; object-fit: cover;') %>
+            <div class="card-body" style="padding: 30px;">
+              <h5 class="card-title" style="font-size: 24px;">Car Accident</h5>
+              <p class="card-text">Analysis of the venues more likely to be chosen by the bookers in the main Australian cities using PowerBi.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card mt-3 mb-3 mx-3" style="width: 23rem;">
+            <%= image_tag('database.png', class: 'card-img-top', alt: 'Database Image', style: 'height: 200px; object-fit: cover;') %>
+            <div class="card-body" style="padding: 30px;">
+              <h5 class="card-title" style="font-size: 24px;">Database</h5>
+              <p class="card-text">Analysis of the venues more likely to be chosen by the bookers in the main Australian cities using PowerBi.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
+</div>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+ <!-- <div class="container-pro mt-3 ms-5">
+    <div class="row justify-content-center">
+      <%# @projects.each do |project_row| %>-->
+<!--      <div class="row">-->
+        <%# project_row.each do |project| %>
+<!--        <div class="col-md-3">
+          <div class="card mt-3 mb-3 mx-3" style="width: 21rem; margin-right: 2px; margin-bottom: 10px;">
+            <%#= link_to project_path(project), style: "text-decoration: none; color: black;" do %>-->
+            <%#= image_tag(project.image.url, class: 'card-img-top', alt: 'Project Image', style: 'height: 200px; object-fit: cover;') if project.image.attached? %>
+<!--            <div class="card-body">
+              <h5 class="card-title"><%#= project.title %></h5>
+              <p class="card-text"><%#= project.details %></p>
+            </div>
+            <%# end %>-->
+<!--          </div>
+        </div>
+      <%# end %>-->
+<!--      </div>-->
+      <%# end %>
+<!--    </div>
+  </div>
+  </div>
+-->
