@@ -27,13 +27,15 @@
     </div>
   </div>
 <% end %>
+   <%= link_to(blog_path, class: "no-underline text-dark") do %>
     <div class="card mt-3 mb-3 mx-3" style="width: 23rem; height: 380px; margin: 20px;">
       <%= image_tag('blog.jpg', class: 'card-img-top', alt: 'blog Image', style: 'height: 200px; object-fit: cover;') %>
       <div class="card-body" style="padding: 30px;">
         <h5 class="card-title" style="font-size: 24px;"><strong>Blog</strong></h5>
-        <p class="card-text">Personal research blog containg some of my favourite articles published for different publications</p>
+        <p class="card-text">Personal research blog containg some of thoughts regarding different topics</p>
       </div>
     </div>
+    <% end %>
 
   <%= link_to(books_path, class: "no-underline text-dark") do %>
     <div class="card mt-3 mb-3 mx-3" style="width: 23rem; height: 380px; margin: 20px;">

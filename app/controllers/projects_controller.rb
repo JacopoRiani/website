@@ -3,6 +3,21 @@ class ProjectsController < ApplicationController
     @projects = Project.all
   end
 
+  def venue
+  end
+
+  def pokemarket
+  end
+
+  def thesis
+  end
+
+  def roadaccident
+  end
+
+  def tripquest
+  end
+
   def show
     @project = Project.find(params[:id])
   end

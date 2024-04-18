@@ -10,8 +10,7 @@
 # puts "Deleting projects..."
 # Project.destroy_all
 
-#Create projects in database
-# Clear existing data
+
 # puts "Cleaning database..."
 # Project.destroy_all
 

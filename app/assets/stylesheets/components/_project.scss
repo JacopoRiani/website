@@ -29,3 +29,12 @@
 .project-details {
   text-align: center; /* Center the text inside */
 }
+
+.fade-image {
+  opacity: 0.8; /* Adjust the opacity value as needed */
+  transition: opacity 0.5s ease; /* Add transition effect for smooth fading */
+}
+
+.fade-image:hover {
+  opacity: 1; /* Change opacity on hover */
+}
