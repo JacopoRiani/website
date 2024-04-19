@@ -25,13 +25,13 @@
 <div class="container mt-5 mb-5">
   <div class="row justify-content-center">
     <div class="col-md-8">
-      <%= simple_form_for :search, url: root_path, method: :get, html: { class: 'form-inline', id: 'search-form' } do |f| %>
+      <%= simple_form_for :search, url: search_books_path, method: :get, html: { class: 'form-inline', id: 'search-form' } do |f| %>
         <div class="search-form-control form-group">
           <select class="form-control mr-sm-2" name="search[book]" id="book-select">
             <option value="" selected>Select a book</option>
-            <option value="book1">IKIGAI</option>
-            <option value="book2">THE NUDGE</option>
-            <option value="book3">ENZO FERRARI</option>
+            <option value="ikigai">IKIGAI</option>
+            <option value="nudge">THE NUDGE</option>
+            <option value="ferrari">ENZO FERRARI</option>
           </select>
         </div>
         <div class="text-center mt-3">
@@ -44,26 +44,43 @@
 
 
 
+
 <p>In this page you can find the most important and interesting books who really helped me to be passionate about the journey I am in and how to get the most out of it! Each of these books taught me somehow the attitude and commitment you might have to pursue what you really want. Probably most of you know them but I’ve tried to summarize from my standpoint!
 Worth a look!
 </p>
-<h3>IKIGAI</h3>
+<%= link_to(ikigai_path, class: "no-underline text-dark") do %>
+  <h3 id="ikigai-title">IKIGAI</h3>
+<% end %>
 
+<style>
+  #ikigai-title:hover {
+    color: orange;
+  }
+</style>
 <h4>The Japanese secret to a long and Happy Life</h4>
-<p>Each of us is driven by a purpose, you just have to discover it. Ikigai, a Japanese way of life, incorporates this concept: figure out what you are good at, what you enjoy and, finally, how you can create value from these two passions. Furthermore, don’t forget to take care of your body and focus on what really matters in your life. By doing this, your life will become easier in every aspect. Regardless of all the problems you face, remember to take action and set a threshold of activities to do so that you don't feel lonely. I think it is good to get out of your comfort bubble and discover yourself by taking some risks, otherwise you will always remain within the confines of your own circle. Have experiences, immerse yourself in other cultures, learn, ask, and don't be shy about making mistakes, despite all the problems you will face. Step out of your comfort zone and find your inner self and what you really want to do with your life, whether it is a job or a holiday. Find what makes you feel good, hang out with friends who would like to see you achieve your goals.
-But remember that the most important thing is to plan your day with commitment, when you decide in your mind to do that, do it! Be flexible, there are two different beliefs: there are people who think that concentrating on developing a single skill and immersing yourself to the maximum on it is better than learning many different skills but at a lower level.
-It's up to you which one you want to step in!
-</p>
-<h3>THE NUDGE</h3>
-<h4>Think differently!</h4>
-<p>The book is a milestone in the field of marketing. It depicts the opportunities that can be achieved by using simple, small details in any kind of marketing communication. How can a simple detail drastically change the vision and feeling? Even if it seems unreal, it is the key to holding the attention of the beholder! In recent years, several private companies as well as public organizations have tried to use this type of tool to highlight elements that keep the audience's attention. Has it been worth the effort? Statistically, it has been proven that by adopting these small measures, the public has changed their minds by a large percentage.  Once again, communication plays a crucial role in shaping the emotions of the audience. The book emphasizes the fact that sometimes we want to be influenced by others to take the right path, otherwise we might get lost in unnecessary time wasting evaluating what is best for us. Make a decision you are most passionate about and whatever comes up with the program, stick with it. Whether it is worthwhile or not, you will still learn more than you knew before. The more you know, the more you are worth!
-</p>
+<p>The people of Japan believe that everyone has an ikigai – a reason to jump out of bed each morning. And according to the residents of the Japanese island of Okinawa – the world’s longest-living people – finding it is the key to a longer and more fulfilled life. Inspiring and comforting, this book will give you the life-changing tools to uncover your personal ikigai. It will show you how to leave urgency behind, find your purpose, nurture friendships and throw yourself into your passions.</p>
 
-<h3>ENZO FERRARI</h3>
+<%= link_to(nudge_path, class: "no-underline text-dark") do %>
+<h3 id="nudge-title">THE NUDGE</h3>
+<% end %>
+<style>
+  #nudge-title:hover {
+    color: orange;
+  }
+</style>
+<h4>Think differently!</h4>
+<p>Every day we make choices—about what to buy or eat, about financial investments or our children’s health and education, even about the causes we champion or the planet itself. Unfortunately, we often choose poorly. Nudge is about how we make these choices and how we can make better ones. Using dozens of eye-opening examples and drawing on decades of behavioral science research, Nobel Prize winner Richard H. Thaler and Harvard Law School professor Cass R. Sunstein show that no choice is ever presented to us in a neutral way, and that we are all susceptible to biases that can lead us to make bad decisions. But by knowing how people think, we can use sensible “choice architecture” to nudge people toward the best decisions for ourselves, our families, and our society, without restricting our freedom of choice.</p>
+
+<%= link_to(ferrari_path, class: "no-underline text-dark") do %>
+<h3 id="ferrari-title">ENZO FERRARI</h3>
+<% end %>
+<style>
+  #ferrari-title:hover {
+    color: orange;
+  }
+</style>
 <h4>The definitive biography of an icon</h4>
-<p>Enzo Ferrari's biography. The name speaks for himself so I can wrap up here (joking). I'll try to dive deeper in his life story! The first chapters talk about his early childhood, he had to face the loss of both his father and his brother.
-Despite these tragedies he was able to not lose the passion for cars and for the sector itself. He was sparked by the desire to build his future at all costs in the field and on top of that he was very passionate about life, throughout his life he has never lost his passion for cars. Thanks to his relentless desire to be a racing driver he overcame all the problems he had to face. He managed to open his own business, although it went bankrupt after a couple of years due to the lack of knowledge which Enzo had at that early age. He pointed out that thanks to that previous failure the way he should have carried out the business. If you are not fully involved in the business, you are very likely to fail. You must step into the business itself, especially if it’s yours. Enzo Ferrary became Ferrari thanks to his passion but also thanks to the devotion of work he used to have for the car business. of living though all the lost he had to tackle. His father used to have a small manufacturing activity and thanks to the revenues of the store he managed to establish his early-stage entrepreneurial activity. He was too busy in the racing competition that he couldn’t spend a lot of time in the new activity. At the age of 23, he met the woman who would become his future wife. In spite of the amazing moments, he spent with her this story will soon become a terrible burden with which Enzo would have to deal in the future.
-His racing career proceeded in full swing, though some initial troubles. Both his mother and his wife were not happy with his job in the racing cars as at that time a lot of people died while racing. It was very risky.  At the age of around 30 thanks to his attitude and his personality he had been in charged of alfa Romeo team, at that time the most important Italian brand when it came to speak about car.
-</p>
+<p>This book examines lesser-known and sometimes hidden aspects of ferrari's career. from his earliest failed business ventures to his political dealings. It sheds new light on Enzo's troubled relationship with his idea of God, delves into his personal relationships, and lays bare, in fascinating detail, the internal politics of the Ferrari company and team. No matter what challenges he faced, Ferrari never lost his unwavering faith in life and in himself.
+
 </div>
 <hr>

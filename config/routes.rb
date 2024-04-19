@@ -6,7 +6,10 @@ Rails.application.routes.draw do
   get 'up' => 'rails/health#show', as: :rails_health_check
   root to: 'pages#home'
   get 'about', to: 'pages#about'
-  get 'blog', to: 'pages#blog'
+
+  get 'blog', to: 'blogs#blog'
+  get 'website', to: 'blogs#website'
+
   resources :projects, only: [:index]
   get 'venue', to: 'projects#venue'
   get 'pokemarket', to: 'projects#pokemarket'
@@ -14,7 +17,12 @@ Rails.application.routes.draw do
   get 'roadaccident', to: 'projects#roadaccident'
   get 'tripquest', to: 'projects#tripquest'
   resources :services, only: [:index]
+
   resources :books, only: [:index]
+  get 'search_books', to: 'books#search', as: 'search_books'
+  get 'ikigai', to: 'books#ikigai'
+  get 'nudge', to: 'books#nudge'
+  get 'ferrari', to: 'books#ferrari'
   # Defines the root path route ("/")
   # root "posts#index"
 end
