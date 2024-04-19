@@ -6,4 +6,7 @@ class BlogsController < ApplicationController
   def website
   end
 
+  def arima
+  end
+
 end

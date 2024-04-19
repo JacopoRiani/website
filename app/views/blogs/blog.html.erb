@@ -1,3 +1,4 @@
+  <div class="container-blog" style="background-color: #f0f0f0;">
   <div class="dashboard-bg" style="background-image: url(<%= asset_path 'projback.jpg' %>); background-size: 100% auto; height: 350px; position: relative;">
     <div class="dashboard-overlay"></div>
     <div class="container" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
@@ -12,14 +13,25 @@
       </div>
     </div>
   </div>
-
+<!-- <style>
+    .rounded-container {
+      background-color: #ADD8E6; /* Set your desired background color */
+      border-radius: 20px; /* Adjust the border radius to control the roundness */
+      padding: 7px; /* Add padding to create space between content and border */
+      border: 2px solid #ccc; /* Add a border around the container */
+      display: inline-block; /* Display the container as an inline-block element */
+    }
+  </style>-->
 <div class="container mt-5" style="max-width: 960px;">
- <%= link_to(website_path, class: "no-underline text-dark") do %>
-  <h2>WHAT DO YOU NEED TO KNOW TO CREATE A WEBSITE</h2>
- <% end %>
+<div first-project>
+    <%= link_to(website_path, class: "no-underline text-dark") do %>
+      <h2>CREATING A WEBSITE</h2>
+    <% end %>
+    <%= image_tag 'website.jpg', height: 400, width: 842%>
+</div>
 
  <h2>Financial econometric models</h2>
 
 
-
+</div>
 </div>

@@ -23,6 +23,7 @@ Rails.application.routes.draw do
   get 'ikigai', to: 'books#ikigai'
   get 'nudge', to: 'books#nudge'
   get 'ferrari', to: 'books#ferrari'
+
   # Defines the root path route ("/")
   # root "posts#index"
 end
