@@ -19,21 +19,22 @@
 
       <div class="row row-cols-1 row-cols-sm-2 g-3">
         <div class="col">
-          <%= link_to(venue_path, class: "no-underline text-dark") do %>
-            <div class="card" style="box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); width: 25rem;">
-              <%= image_tag('leadfeed.png', class: 'card-img-top fade-image', alt: 'Leadfeed Image') %>
-              <div class="card-body" style="padding: 33px;">
-                <h5 class="card-title" style="font-size: 22px;">Venues Gap Suburb</h5>
-                <p class="card-text">Analysis of the venues more likely to be chosen by the bookers in the main Australian cities using PowerBi.</p>
-              </div>
-            </div>
-          <% end %>
-        </div>
+      <%= link_to(venue_path, class: "no-underline text-dark") do %>
+        <div class="card position-relative" style="width: 25rem;">
+          <%= image_tag('leadfeed.png', class: 'card-img-top blur-image rounded', style: 'height: 200px; object-fit: cover; filter: blur(5px);', alt: 'Leadfeed Image') %>
+          <div class="overlay"></div>
+          <div class="card-body" style="padding: 33px;">
+        <h5 class="card-title" style="font-size: 22px;">Venues Gap Suburb</h5>
+        <p class="card-text">Analysis of the venues more likely to be chosen by the bookers in the main Australian cities using PowerBi.</p>
+      </div>
+      </div>
+      <% end %>
+    </div>
 
         <div class="col">
           <%= link_to(thesis_path, class: "no-underline text-dark") do %>
             <div class="card" style="box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); width: 25rem;">
-              <%= image_tag('thesis.png', class: 'card-img-top', alt: 'Thesis Image') %>
+              <%= image_tag('thesis.png', class: 'card-img-top', style: 'height: 200px;', alt: 'Thesis Image') %>
               <div class="card-body" style="padding: 33px;">
                 <h5 class="card-title" style="font-size: 22px;">Master Thesis</h5>
                 <p class="card-text">Analysis and forecast of the motors demand in the Supply Chain. The forecast has been done through Arima model in R.</p>
@@ -45,7 +46,7 @@
         <div class="col">
           <%= link_to(tripquest_path, class: "no-underline text-dark") do %>
             <div class="card" style="box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); width: 25rem;">
-              <%= image_tag('tripque.png', class: 'card-img-top', alt: 'TripQuest Image') %>
+              <%= image_tag('tripque.png', class: 'card-img-top', style: 'height: 200px;', alt: 'TripQuest Image') %>
               <div class="card-body" style="padding: 33px;">
                 <h5 class="card-title" style="font-size: 22px;">TripQuest</h5>
                 <p class="card-text">The best way to plan your trips and earn rewards!</p>
@@ -57,7 +58,7 @@
         <div class="col">
           <%= link_to(pokemarket_path, class: "no-underline text-dark") do %>
             <div class="card" style="box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); width: 25rem;">
-              <%= image_tag('pokemarket.png', class: 'card-img-top', alt: 'Pokemarket Image') %>
+              <%= image_tag('pokemarket.png', class: 'card-img-top', style: 'height: 200px;', alt: 'Pokemarket Image') %>
               <div class="card-body" style="padding: 33px;">
                 <h5 class="card-title" style="font-size: 22px;">Pokemarket</h5>
                 <p class="card-text">Web application using Ruby, JS, html and css.</p>
@@ -69,7 +70,7 @@
         <div class="col">
           <%= link_to(roadaccident_path, class: "no-underline text-dark") do %>
             <div class="card" style="box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); width: 25rem;">
-              <%= image_tag('caraccident.png', class: 'card-img-top', alt: 'Car accident Image') %>
+              <%= image_tag('caraccident.png', class: 'card-img-top', style: 'height: 200px;', alt: 'Car accident Image') %>
               <div class="card-body" style="padding: 33px;">
                 <h5 class="card-title" style="font-size: 22px;">Road Accidents (sp) in Italy</h5>
                 <p class="card-text">Analysis of the road accident in Italy by using available Istat data.</p>
@@ -81,7 +82,7 @@
         <div class="col">
           <%= link_to("#", class: "no-underline text-dark") do %>
             <div class="card" style="box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); width: 25rem;">
-              <%= image_tag('database.png', class: 'card-img-top', alt: 'Database Image') %>
+              <%= image_tag('database.png', class: 'card-img-top', style: 'height: 200px;', alt: 'Database Image') %>
               <div class="card-body" style="padding: 33px;">
                 <h5 class="card-title" style="font-size: 22px;">Querying a database</h5>
                 <p class="card-text">Page of a bus fleet using Access and SQL, VBA.</p>

@@ -1,8 +1,35 @@
-<div class="container" style="max-width: 960px;">
-<p>
-It is a project implemented in PowerBI whose goal was to find the gap between Headbox's available venues and the customers' demands in terms of locations and events. Whether it was a personal event or a corporate meeting, the goal was to match all the different requests with the perfect venues and the perfect event. Every day Headbox received 30 enquiries. Of these 30 requests, most were independent personal events. See the pie chart. The data was retrieved from the platform database (Lead Feed). I collected more than 600 enquiries, so about a month's worth of enquiries and some interesting visualisations below. I used several graphs, each of which is interlinked. This allowed us to better understand the individual data for different parameters.
-</p>
-<%= image_tag 'leadfeed.png', height: 370, width: 500, crop: :fill, style: "filter: blur(5px);"%>
-<p>Write something</p>
-<%= image_tag 'leadfeed1.png', height: 370, width: 500, crop: :fill %>
+<div class="dashboard-bg position-relative" style="background-image: url(<%= asset_path 'projback.jpg' %>); background-size: cover; background-position: center; height: 400px;">
+  <div class="dashboard-overlay"></div>
+  <div class="container h-100">
+    <div class="row justify-content-center align-items-center h-100">
+      <div class="col-md-6 text-center text-white">
+        <div class="my-4">
+          <h1 class="mb-4"><span class="accent-title"> GAP VENUES</span></h1>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
+<div class="container mt-4" style="max-width: 960px;">
+  <p>
+    It is a project implemented in PowerBI whose goal was to find the gap between Headbox's available venues and the customers'
+    demands in terms of locations and events. Whether it was a personal event or a corporate meeting, the goal was to match all the different
+    requests with the perfect venues and event. The data was retrieved from the platform database (Lead Feed).
+    I used several graphs, each of which is interlinked. This allowed us to better understand the individual data for different parameters.
+  </p>
+  <%= image_tag 'leadfeed.png', class: "img-fluid", alt: "Lead Feed Image" %>
+  <%= image_tag 'leadfeed1.png', class: "img-fluid", alt: "Lead Feed Image 1" %>
+</div>
+
+<style>
+
+  .img-fluid {
+    max-width: 60%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    filter: blur(5px);
+  }
+
+
+</style>

@@ -1,1 +1,30 @@
-<%= image_tag 'accident.png', height: 370, width: 500, crop: :fill %>
+<div class="dashboard-bg position-relative" style="background-image: url(<%= asset_path 'projback.jpg' %>); background-size: cover; background-position: center; height: 400px;">
+  <div class="dashboard-overlay"></div>
+  <div class="container h-100">
+    <div class="row justify-content-center align-items-center h-100">
+      <div class="col-md-6 text-center text-white">
+        <div class="my-4">
+          <h1 class="mb-4"><span class="accent-title">ROAD ACCIDENTS ANALYSIS</span></h1>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container mt-4" style="max-width: 960px;">
+<p>This project stems from the desire to reduce road accidents while offering an opportunity to drivers! By analyzing the open-source data provided by Istat we can poinpoint which zones should require more attention. It's an important and interesting topic which has always been at the center of speakings. Really the cars won't require our driving in the near future or are we still far from that development?What if we can offer an opportunity now to drivers?
+If you are curious and would like to receive more info, reach out and I'll take you through the project!
+</p>
+<%= image_tag 'accident.png', class: "img-fluid", crop: :fill %>
+</div>
+<style>
+
+  .img-fluid {
+    max-width: 60%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    filter: blur(5px);
+  }
+
+
+</style>
