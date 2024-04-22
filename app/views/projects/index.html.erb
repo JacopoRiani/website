@@ -1,106 +1,99 @@
 <div class="container-projects" style="background-color: #f0f0f0;">
 
-<div class="dashboard-bg" style="background-image: url(<%= asset_path 'projback.jpg' %>); background-size: 100% auto; height: 400px; position: relative;">
-    <div class="dashboard-overlay"></div>
-    <div class="container" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
-      <div class="row">
-        <div class="col-md-6 offset-md-3 text-center text-white">
-          <div class="my-4">
-            <br>
-            <br>
-            <h1><span class="accent-title text-white mt-5">PROJECTS</span></h1>
-          </div>
+<div class="dashboard-bg position-relative" style="background-image: url(<%= asset_path 'projback.jpg' %>); background-size: cover; background-position: center; height: 400px;">
+  <div class="dashboard-overlay"></div>
+  <div class="container h-100">
+    <div class="row justify-content-center align-items-center h-100">
+      <div class="col-md-6 text-center text-white">
+        <div class="my-4">
+          <h1 class="mb-4"><span class="accent-title">PROJECTS</span></h1>
         </div>
       </div>
     </div>
   </div>
-
+</div>
 
 <div class="container mt-3">
   <div class="row justify-content-center">
-    <div class="col-md-8"> <!-- This will create two columns in the middle of the page -->
+    <div class="col-md-8">
 
-      <div class="row">
-        <div class="col-md-6">
+      <div class="row row-cols-1 row-cols-sm-2 g-3">
+        <div class="col">
           <%= link_to(venue_path, class: "no-underline text-dark") do %>
-            <div class="card mt-3 mb-3 mx-3" style="width: 23rem; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);">
-              <%= image_tag('leadfeed.png', class: 'card-img-top fade-image', alt: 'Leadfeed Image', style: 'height: 200px; object-fit: cover; filter: blur(5px);') %>
-              <div class="card-body" style="padding: 30px;">
-                <h5 class="card-title" style="font-size: 24px;">Venues Gap Suburb</h5>
+            <div class="card" style="box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); width: 25rem;">
+              <%= image_tag('leadfeed.png', class: 'card-img-top fade-image', alt: 'Leadfeed Image') %>
+              <div class="card-body" style="padding: 33px;">
+                <h5 class="card-title" style="font-size: 22px;">Venues Gap Suburb</h5>
                 <p class="card-text">Analysis of the venues more likely to be chosen by the bookers in the main Australian cities using PowerBi.</p>
               </div>
             </div>
           <% end %>
         </div>
 
-        <div class="col-md-6">
-        <%= link_to(thesis_path, class: "no-underline text-dark") do %>
-          <div class="card mt-3 mb-3 mx-3" style="width: 23rem; box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);">
-            <%= image_tag('thesis.png', class: 'card-img-top', alt: 'Thesis Image', style: 'height: 200px; object-fit: cover;') %>
-            <div class="card-body" style="padding: 30px;">
-              <h5 class="card-title" style="font-size: 24px;">Master Thesis</h5>
-              <p class="card-text">Analysis and forecast of the motors demand in the Supply Chain. The forecast has been done through Arima model in R.</p>
+        <div class="col">
+          <%= link_to(thesis_path, class: "no-underline text-dark") do %>
+            <div class="card" style="box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); width: 25rem;">
+              <%= image_tag('thesis.png', class: 'card-img-top', alt: 'Thesis Image') %>
+              <div class="card-body" style="padding: 33px;">
+                <h5 class="card-title" style="font-size: 22px;">Master Thesis</h5>
+                <p class="card-text">Analysis and forecast of the motors demand in the Supply Chain. The forecast has been done through Arima model in R.</p>
+              </div>
             </div>
-          </div>
-        <% end %>
+          <% end %>
         </div>
-      </div>
 
-      <div class="row mt-3"> <!-- Add margin between rows -->
-        <div class="col-md-6">
-        <%= link_to(tripquest_path, class: "no-underline text-dark") do %>
-          <div class="card mt-3 mb-3 mx-3" style="width: 23rem;">
-            <%= image_tag('tripque.png', class: 'card-img-top', alt: 'TripQuest Image', style: 'height: 200px; object-fit: cover;') %>
-            <div class="card-body" style="padding: 30px;">
-              <h5 class="card-title" style="font-size: 24px;">TripQuest</h5>
-              <p class="card-text">The best way to plan your trips and earn rewards!</p>
+        <div class="col">
+          <%= link_to(tripquest_path, class: "no-underline text-dark") do %>
+            <div class="card" style="box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); width: 25rem;">
+              <%= image_tag('tripque.png', class: 'card-img-top', alt: 'TripQuest Image') %>
+              <div class="card-body" style="padding: 33px;">
+                <h5 class="card-title" style="font-size: 22px;">TripQuest</h5>
+                <p class="card-text">The best way to plan your trips and earn rewards!</p>
+              </div>
             </div>
-          </div>
-        <% end %>
+          <% end %>
         </div>
-        <div class="col-md-6">
-        <%= link_to(pokemarket_path, class: "no-underline text-dark") do %>
-          <div class="card mt-3 mb-3 mx-3" style="width: 23rem;">
-            <%= image_tag('pokemarket.png', class: 'card-img-top', alt: 'Pokemarket Image', style: 'height: 200px; object-fit: cover;') %>
-            <div class="card-body" style="padding: 30px;">
-              <h5 class="card-title" style="font-size: 24px;">Pokemarket</h5>
-              <p class="card-text">Web application using Ruby, JS, html and css</p>
-            </div>
-          </div>
-        <% end %>
-        </div>
-      </div>
 
-      <div class="row mt-3"> <!-- Add margin between rows -->
-        <div class="col-md-6">
-        <%= link_to(roadaccident_path, class: "no-underline text-dark") do %>
-          <div class="card mt-3 mb-3 mx-3" style="width: 23rem;">
-            <%= image_tag('caraccident.png', class: 'card-img-top', alt: 'Car accident Image', style: 'height: 200px; object-fit: cover;') %>
-            <div class="card-body" style="padding: 30px;">
-              <h5 class="card-title" style="font-size: 24px;">Road Accidents (sp) in Italy</h5>
-              <p class="card-text">Analysis of the road accident in Italy by using available Istat data</p>
+        <div class="col">
+          <%= link_to(pokemarket_path, class: "no-underline text-dark") do %>
+            <div class="card" style="box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); width: 25rem;">
+              <%= image_tag('pokemarket.png', class: 'card-img-top', alt: 'Pokemarket Image') %>
+              <div class="card-body" style="padding: 33px;">
+                <h5 class="card-title" style="font-size: 22px;">Pokemarket</h5>
+                <p class="card-text">Web application using Ruby, JS, html and css.</p>
+              </div>
             </div>
-          </div>
-        <% end %>
+          <% end %>
         </div>
-        <div class="col-md-6">
-          <div class="card mt-3 mb-3 mx-3" style="width: 23rem;">
-            <%= image_tag('database.png', class: 'card-img-top', alt: 'Database Image', style: 'height: 200px; object-fit: cover;') %>
-            <div class="card-body" style="padding: 30px;">
-              <h5 class="card-title" style="font-size: 24px;">Querying a database</h5>
-              <p class="card-text">Page of a bus fleet using Access and SQL, VBA</p>
-            </div>
-          </div>
-        </div>
-      </div>
 
+        <div class="col">
+          <%= link_to(roadaccident_path, class: "no-underline text-dark") do %>
+            <div class="card" style="box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); width: 25rem;">
+              <%= image_tag('caraccident.png', class: 'card-img-top', alt: 'Car accident Image') %>
+              <div class="card-body" style="padding: 33px;">
+                <h5 class="card-title" style="font-size: 22px;">Road Accidents (sp) in Italy</h5>
+                <p class="card-text">Analysis of the road accident in Italy by using available Istat data.</p>
+              </div>
+            </div>
+          <% end %>
+        </div>
+
+        <div class="col">
+          <%= link_to("#", class: "no-underline text-dark") do %>
+            <div class="card" style="box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); width: 25rem;">
+              <%= image_tag('database.png', class: 'card-img-top', alt: 'Database Image') %>
+              <div class="card-body" style="padding: 33px;">
+                <h5 class="card-title" style="font-size: 22px;">Querying a database</h5>
+                <p class="card-text">Page of a bus fleet using Access and SQL, VBA.</p>
+              </div>
+            </div>
+          <% end %>
+        </div>
+
+      </div>
     </div>
   </div>
 </div>
-
-
-    </div>
-  </div>
 </div>
 
 
