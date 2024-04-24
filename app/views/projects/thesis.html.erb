@@ -38,12 +38,12 @@ In order to decompose our time series into its fundamental 4 components
 •	Auto-Regressive Integrated Moving Average (ARIMA): ARIMA is a combination of Auto-Regressive and Moving Average models and assumes that future prices are a linear combination of past input data. One of the main advantages of ARIMA is that it can work also with non-stationary time series (which reflects better the true nature of stock data).
 
 
-Data Preprocessing
+
 At this point, we are ready to import the necessary libraries and datasets.
 
 Once cleaned the dataset, we can now divide it into training and test subsets and visualize the time series.
 ARIMA (AutoRegressive Integrated Moving Average)
-The acronym of ARIMA stands for [1]:
+The acronym of ARIMA stands for:
 <ul>
   <li>AutoRegressive: the model takes advantage of the connection between a predefined number of lagged observations and the current one.</li>
   <li>Integrated: differencing between raw observations (e.g. subtracting observations at different time steps).</li>
@@ -62,3 +62,4 @@ ARIMA can lead to particularly good results if applied to short time predictions
 </p>
 <%= image_tag "arima.png", height: 330, width: 520, crop: :fill %>
 </div>
+<hr>
